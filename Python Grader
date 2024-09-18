@@ -1,0 +1,16 @@
+Points_possible = int(input("Total points possible: "))
+
+Points_gotten = float(input("Points Achieved: "))
+
+grade = ((Points_gotten / Points_possible) * 100)
+
+if grade >= 89:
+    print("Grade: A")
+elif grade < 89 and grade >= 76:
+    print("Grade: B")
+elif grade < 76 and grade >= 61:
+    print("Grade: C")
+elif grade < 61 and grade >= 51:
+    print("Grade: D")
+else:
+    print("Grade: F")
